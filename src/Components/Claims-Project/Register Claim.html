@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>New Claim Register</title>
+            <link href="styles.css" type="text/css" rel="stylesheet" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      </head>
+      <body>
+            <div class="container">
+               <h1>New Claim Register</h1>
+               <h4>Instructions</h4>
+               <ul>
+               	<li>Complete each of the fields</li>
+               	<li>Press the send button</li>
+               </ul>
+               <h4>Customer Information</h4>
+               <form action="post">
+               <label for="Policy Number">Policy Number*</label>
+               	<input name="Policy Number" type="text">
+                <br> 
+
+                 <label>Policy Type *</label>
+
+                <div class="radio-container">
+
+                <input type="radio" id="Property" value="property" name="Policy Type">
+                <label class="radio-label" for="Property" >Property</label>
+                
+                <input type="radio" id="Motor" value="Motor" name="Policy Type">
+                <label class="radio-label" for="Motor">Motor</label>
+                
+                <input type="radio" id="Pet" value="Pet" name="Policy Type"> 
+                <label class="radio-label" for="Petg">Pet</label>
+                </div>
+                <br>
+               	<label for="title">Title</label>
+               	<select name="title">
+               		<option value="Mr">Mr</option>
+               		<option value="Miss">Miss</option>
+               		<option value="Mrs">Mrs</option>
+               		<option value="Ms">Mrs</option>
+               		<option value="Mx">Mx</option>
+               	</select>
+               	<br>
+                <label for="Customer's Full Name">Customer Full Name*</label>
+               	<input name="Customer Full Name" type="taxt">
+                <br> 
+
+                <label for="startdate">Claim Start date*</label>
+                <input type="date" id="startdate" name="startdate"> 
+                <br>
+                <label for="startdate">Estimated Amount*</label>
+                <input type="text" id="Estimated Amount" name="Estimated Amount"> 
+                <br>
+                <label for="Reason for the Claim*">Reason for the Claim*</label>
+                <input type="text" id="Reason for the Claim" name="Reason for the Claim"> 
+                <br>
+                   
+               	<label for="address1">House number & street name</label>
+               	<input name="address1" type="text">
+               	<br>
+               	<label for="address2">Town or City</label>
+               	<input name="address2" type="text">
+               	<br>
+               	<label for="address3">Zip code / Post Code</label>
+               	<input name="address3" type="text"><br>
+               	<button type="submit">SEND</button>
+               </form>
+         </div>
+      </body>
+</html>
